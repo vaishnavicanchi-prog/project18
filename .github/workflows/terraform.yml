@@ -1,4 +1,4 @@
-name: Terraform 
+name: Terraform new1
  
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
           aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           aws-region: ap-south-1
  
-      - name: Terraform format
+      - name: Terraform fmt
         run: terraform fmt -recursive
  
       - name: Terraform init
